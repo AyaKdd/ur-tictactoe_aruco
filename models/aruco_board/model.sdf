@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+<sdf version="1.9">
+  <model name="aruco_board">
+    <static>true</static>
+    <link name="board_link">
+      <visual name="board_visual">
+        <geometry>
+          <plane>
+            <normal>0 0 1</normal>
+            <size>0.3 0.3</size>
+          </plane>
+        </geometry>
+        <material>
+          <!-- <script>
+            <uri>model://aruco_board/materials/scripts</uri>
+            <uri>model://aruco_board/materials/textures</uri>
+            <name>ArucoBoard/Diffuse</name>
+          </script> -->
+          <pbr>
+            <metal>
+            <albedo_map>materials/textures/aruco_grid.png</albedo_map>
+            <metalness>0.0</metalness>
+            <roughness>1.0</roughness>
+            </metal>
+          </pbr>
+        </material>
+      </visual>
+      <collision name="board_collision">
+        <geometry>
+          <plane>
+            <normal>0 0 1</normal>
+            <size>0.3 0.3</size>
+          </plane>
+        </geometry>
+      </collision>
+    </link>
+  </model>
+</sdf>

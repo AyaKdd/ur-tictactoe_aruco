@@ -1,0 +1,13 @@
+material ArucoBoard/Diffuse
+{
+	technique
+	{
+		pass
+		{
+			texture_unit
+			{
+				texture aruco_grid.png
+			}
+		}
+	}
+}
